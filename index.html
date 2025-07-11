@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1><i class="fas fa-birthday-cake icon"></i>Age Calculator</h1>
+        
+        <div class="input-group">
+            <label for="birthdate">Enter your birthdate:</label>
+            <input type="date" id="birthdate" name="birthdate">
+            <div class="error" id="error">Please select a valid date in the past</div>
+        </div>
+        
+        <button id="calculate-btn">
+            <i class="fas fa-calculator icon"></i>Calculate Age
+        </button>
+        
+        <div class="result" id="result">
+            <h2>Your Age Is:</h2>
+            <div class="age-info">
+                <div class="age-item">
+                    <div class="age-value" id="years">0</div>
+                    <div class="age-label">Years</div>
+                </div>
+                <div class="age-item">
+                    <div class="age-value" id="months">0</div>
+                    <div class="age-label">Months</div>
+                </div>
+                <div class="age-item">
+                    <div class="age-value" id="days">0</div>
+                    <div class="age-label">Days</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>Calculate your exact age in years, months, and days</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
